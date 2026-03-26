@@ -1,0 +1,44 @@
+- navigation:
+  - list:
+    - listitem:
+      - link "Markets":
+        - /url: https://www.investing.com/markets/
+        - text: ""
+        - img
+    - listitem:
+      - link "My Watchlist":
+        - /url: https://www.investing.com/portfolio/
+        - img
+        - text: ""
+    - listitem
+    - listitem:
+      - link "News":
+        - /url: https://www.investing.com/news/
+    - listitem:
+      - link "Analysis":
+        - /url: https://www.investing.com/analysis/
+    - listitem:
+      - link "Charts":
+        - /url: https://www.investing.com/charts/
+    - listitem:
+      - link "Technical":
+        - /url: https://www.investing.com/technical/
+    - listitem:
+      - link "Brokers":
+        - /url: https://www.investing.com/brokers/
+    - listitem:
+      - link "Tools":
+        - /url: https://www.investing.com/tools/
+    - listitem:
+      - link "Academy":
+        - /url: https://www.investing.com/academy/
+    - listitem:
+      - link "Stock Screener":
+        - /url: https://www.investing.com/stock-screener
+    - listitem:
+      - link:
+        - /url: https://www.investing.com/pro/
+        - img
+    - listitem:
+      - text: More
+      - img
