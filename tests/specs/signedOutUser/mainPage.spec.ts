@@ -27,3 +27,7 @@ test('Academy tab menu visible on hover', async ({mainPage}) => {
 test('Tools menu visibility on hover', async ({mainPage}) => {
     await mainPage.toolsMenuIsVisible();
 });
+
+test('Open my portfolio page test', async ({mainPage}) => {
+    await mainPage.openPortfolioPage();
+});

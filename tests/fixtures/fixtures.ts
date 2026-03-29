@@ -1,9 +1,11 @@
 import { test as base } from '@playwright/test';
 import { MainPage } from '../pages/MainPage';
+import { PortfolioPage } from '../pages/PortfolioPage';
 
 // Declare the types of your fixtures.
 type MyFixtures = {
   mainPage: MainPage;
+  portfolioPage: PortfolioPage;
 };
 
 // Extend base test by providing "todoPage" and "settingsPage".
@@ -17,5 +19,11 @@ export const test = base.extend<MyFixtures>({
     // Use the fixture value in the test.
     await use(mainPage);
   },
+  portfolioPage: async ({page}, use) => {
+    const portfolioPage = new PortfolioPage(page);
+    await portfolioPage.open();
+    await use(portfolioPage);
+  },
 });
+
 export { expect } from '@playwright/test';

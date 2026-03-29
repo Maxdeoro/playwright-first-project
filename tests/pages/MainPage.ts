@@ -2,13 +2,13 @@ import { expect, Locator, Page } from 'playwright/test';
 import { BasePage } from './BasePage';
 
 export class MainPage extends BasePage {
-    readonly headerLocator: Locator;
-    readonly categoriesTabsLocator: Locator;
-    readonly academyTabLocator: Locator;
-    readonly toolsTabLocator: Locator;
-    readonly myWatchlistTabLocator: Locator;
-    readonly academyMenuLocator: Locator;
-    readonly toolsMenuLocator: Locator;
+    private readonly headerLocator: Locator;
+    private readonly categoriesTabsLocator: Locator;
+    private readonly academyTabLocator: Locator;
+    private readonly toolsTabLocator: Locator;
+    private readonly myWatchlistTabLocator: Locator;
+    private readonly academyMenuLocator: Locator;
+    private readonly toolsMenuLocator: Locator;
 
     constructor(page: Page) {
         super(page);
@@ -58,5 +58,9 @@ export class MainPage extends BasePage {
     async toolsMenuIsVisible() {
         await this.toolsTabLocator.hover();
         await expect(this.toolsMenuLocator).toBeVisible();
+    };
+
+    async openPortfolioPage() {
+        await this.myWatchlistTabLocator.click();
     };
 };
